@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloth-HUNT | Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- responsive -->
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md flex-column position-relative">
+            <div class="container justify-content-between pb-2">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand fw-bold fs-2" href='index.html'><img src="images/logo.png" alt="logo"
+                        class="img-fluid"></a>
+
+                <form class="d-md-flex d-none" role="search">
+                    <input class="form-control rounded-0 rounded-start search" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <button class="btn btn-outline-primary rounded-0 rounded-end" type="submit">Search</button>
+                </form>
+                <div class="header-buttons">
+                    <button class="btn btn-primary d-md-none">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <button class="btn btn-primary"><i class="fa-solid fa-user me-lg-2"></i><span
+                            class="d-none d-lg-inline-block">Login</span></button>
+                    <button class="btn btn-primary position-relative">
+                        <i class="fa-solid fa-cart-shopping me-2"></i><span class="d-none d-lg-inline-block">Cart</span>
+                        <span class="badge">0</span>
+                    </button>
+                    <button class="btn btn-primary d-none d-lg-inline-block position-relative">
+                        <i class="fa-solid fa-heart me-2"></i><span class="d-none d-lg-inline-block">Whishlist</span>
+                        <span class="badge">0</span>
+                    </button>
+                </div>
+            </div>
+            <div class="hr d-none d-md-block"></div>
+            <div class="nav-menu container align-self-start">
+                <div class="collapse navbar-collapse pt-2" id="navbarSupportedContent">
+                    <ul class="navbar-nav gap-md-4 mb-lg-0 ">
+                        <li class="nav-item ">
+                            <a class="nav-link fw-bold text-uppercase active" aria-current="page"
+                                href='javascript:void(0)'>Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-uppercase" href='javascript:void(0)'>About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link fw-bold text-uppercase dropdown-toggle" href='javascript:void(0)'
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Shop
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href='javascript:void(0)'>Action</a></li>
+                                <li><a class="dropdown-item" href='javascript:void(0)'>Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href='javascript:void(0)'>Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link fw-bold text-uppercase dropdown-toggle" href='javascript:void(0)'
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href='javascript:void(0)'>Action</a></li>
+                                <li><a class="dropdown-item" href='javascript:void(0)'>Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href='javascript:void(0)'>Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-uppercase" href='javascript:void(0)'>
+                                Contact us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- navigation -->
+        <section class="navigation">
+            <div class="container">
+                <nav aria-label="breadcrumb" class="d-flex flex-column align-items-center">
+                    <h2 class="text-white">Shop</h2>
+                    <ol class=" breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Shop</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+        <!-- products -->
+        <section class="shop">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-12 col-md-3 px-2 border py-3 rounded">
+                        <div class="filter rounded">
+                            <p class="text-uppercase text-primary fw-bold">Filter:</p>
+
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item border-top">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                            aria-expanded="false" aria-controls="flush-collapseOne">
+                                            Color
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-unstyled mb-0">
+                                                <li>
+                                                    <input type="checkbox" name="red" value="red" id="red">
+                                                    <label for="red">Red</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" name="blue" id="blue">
+                                                    <label for="blue">Blue</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" name="green" id="green">
+                                                    <label for="green">Green</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" name="yellow" id="yellow">
+                                                    <label for="yellow">Yellow</label>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                            aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            Size
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-unstyled mb-0">
+                                                <li>
+                                                    <input type="checkbox" name="small" id="small">
+                                                    <label for="small">Small (S)</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" name="medium" id="medium">
+                                                    <label for="medium">Medium (M)</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" name="large" id="large">
+                                                    <label for="large">Large (lg)</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" name="extraLarge" id="extraLarge">
+                                                    <label for="extraLarge">Extra Large (xl)</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" name="extraExtraLarge" id="extraExtraLarge">
+                                                    <label for="extraExtraLarge"> Extra Extra Large (xxl)</label>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item border-bottom">
+                                    <h2 class="accordion-header" id="flush-headingThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                            aria-expanded="false" aria-controls="flush-collapseThree">
+                                            Price
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse show"
+                                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-unstyled mb-0">
+                                                <li>
+                                                    <input type="checkbox" name="one" id="one">
+                                                    <label for="one"> below $100.00</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" name="one_tow" id="one_tow">
+                                                    <label for="one_tow">$100 - $200</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" name="two_three" id="two_three">
+                                                    <label for="two_three">$200 - $300</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" name="three_four" id="three_four">
+                                                    <label for="three_four">$300 - $400</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" name="four_five" id="four_five">
+                                                    <label for="four_five">$400 - $500</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" name="five-six" id="five-six">
+                                                    <label for="five-six">$500 - $600</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" name="six_seven" id="six_seven">
+                                                    <label for="six_seven">$600 - $700</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" name="seven_eight" id="seven_eight">
+                                                    <label for="seven_eight">$700 - $800</label>
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" name="eight" id="eight">
+                                                    <label for="eight">above $800</label>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-9 px-2 py-3 border border-start-0 rounded">
+                        <div class="categ mb-3">
+
+                            <div class="tabs">
+                                <div class="tab tab--1 active" data-tab="1" title="Grid">
+                                    <i class="fa-solid fa-border-all"></i>
+                                </div>
+                                <div class="tab tab--2" data-tab="2" title="List">
+                                    <i class="fa-solid fa-list"></i>
+                                </div>
+                            </div>
+
+                            <select name="select" id="select" class="p-2 rounded shadow">
+                                <option value="" selected disabled>Select Category</option>
+                                <option value="all">All</option>
+                                <option value="men shirt">Men's Shirt</option>
+                                <option value="men t-shirt">Men's T-Shirt</option>
+                                <option value="men lowers">Men's Lowers</option>
+                                <option value="men trowsers">Men's Trowsers</option>
+                                <option value="women top">Women's Top</option>
+                                <option value="women ethenic">Women's Ethenic Wears</option>
+                                <option value="women scirts">Women's Scirts</option>
+                                <option value="women wedding">Women's Wedding Collection</option>
+                                <option value="kids">Kids</option>
+                            </select>
+
+                            <select name="sort" id="sort" class="p-2 rounded shadow border-0">
+                                <option value="" selected disabled>Sort by</option>
+                                <option value="priceLow">Price Low to High</option>
+                                <option value="priceHigh">Price High to Low</option>
+                            </select>
+                        </div>
+                        <div class="products">
+                            <div class="tab-content">
+                                <div class="tab-info tab-content--1 active">
+                                    <div class="row">
+                                        <div class="col-6 col-lg-4 mb-4">
+                                            <div class="card product-card p-2">
+                                                <div class="card-img mb-2 position-relative">
+                                                    <img src="images/products/product-1.jpg" class="card-img-top"
+                                                        alt="product-image">
+                                                    <div href="javascript:void(0)" class="wish-list-icon">
+                                                        <i class="bi bi-suit-heart"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body p-0">
+                                                    <h5 class="card-title fs-6 text-center">Women Tops- blue color</h5>
+
+                                                    <p class="card-text price m-0 text-center">$123.00 <span
+                                                            class="sub-price"><del>$150</del></span> </p>
+                                                    <div class="rating mb-2 text-center">
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </div>
+                                                    <div
+                                                        class="card-btn d-flex justify-content-lg-evenly justify-content-between">
+                                                        <a href="javascript:void(0)" class="btn btn-primary">
+                                                            <i class="fa-solid fa-eye me-2"></i>View
+                                                        </a>
+                                                        <a href="javascript:void(0)" class="btn btn-primary">
+                                                            <i class="fa-solid fa-cart-shopping me-2"></i>Add to Cart
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-lg-4 mb-4">
+                                            <div class="card product-card p-2">
+                                                <div class="card-img mb-2 position-relative">
+                                                    <img src="images/products/product-1.jpg" class="card-img-top"
+                                                        alt="product-image">
+                                                    <div href="javascript:void(0)" class="wish-list-icon">
+                                                        <i class="bi bi-suit-heart"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body p-0">
+                                                    <h5 class="card-title fs-6 text-center">Women Tops- blue color</h5>
+
+                                                    <p class="card-text price m-0 text-center">$123.00 <span
+                                                            class="sub-price"><del>$150</del></span> </p>
+                                                    <div class="rating mb-2 text-center">
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </div>
+                                                    <div
+                                                        class="card-btn d-flex justify-content-lg-evenly justify-content-between">
+                                                        <a href="javascript:void(0)" class="btn btn-primary">
+                                                            <i class="fa-solid fa-eye me-2"></i>View
+                                                        </a>
+                                                        <a href="javascript:void(0)" class="btn btn-primary">
+                                                            <i class="fa-solid fa-cart-shopping me-2"></i>Add to Cart
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-lg-4 mb-4">
+                                            <div class="card product-card p-2">
+                                                <div class="card-img mb-2 position-relative">
+                                                    <img src="images/products/product-1.jpg" class="card-img-top"
+                                                        alt="product-image">
+                                                    <div href="javascript:void(0)" class="wish-list-icon">
+                                                        <i class="bi bi-suit-heart"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body p-0">
+                                                    <h5 class="card-title fs-6 text-center">Women Tops- blue color</h5>
+
+                                                    <p class="card-text price m-0 text-center">$123.00 <span
+                                                            class="sub-price"><del>$150</del></span> </p>
+                                                    <div class="rating mb-2 text-center">
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </div>
+                                                    <div
+                                                        class="card-btn d-flex justify-content-lg-evenly justify-content-between">
+                                                        <a href="javascript:void(0)" class="btn btn-primary">
+                                                            <i class="fa-solid fa-eye me-2"></i>View
+                                                        </a>
+                                                        <a href="javascript:void(0)" class="btn btn-primary">
+                                                            <i class="fa-solid fa-cart-shopping me-2"></i>Add to Cart
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-lg-4 mb-4">
+                                            <div class="card product-card p-2">
+                                                <div class="card-img mb-2 position-relative">
+                                                    <img src="images/products/product-1.jpg" class="card-img-top"
+                                                        alt="product-image">
+                                                    <div href="javascript:void(0)" class="wish-list-icon">
+                                                        <i class="bi bi-suit-heart"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body p-0">
+                                                    <h5 class="card-title fs-6 text-center">Women Tops- blue color</h5>
+
+                                                    <p class="card-text price m-0 text-center">$123.00 <span
+                                                            class="sub-price"><del>$150</del></span> </p>
+                                                    <div class="rating mb-2 text-center">
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </div>
+                                                    <div
+                                                        class="card-btn d-flex justify-content-lg-evenly justify-content-between">
+                                                        <a href="javascript:void(0)" class="btn btn-primary">
+                                                            <i class="fa-solid fa-eye me-2"></i>View
+                                                        </a>
+                                                        <a href="javascript:void(0)" class="btn btn-primary">
+                                                            <i class="fa-solid fa-cart-shopping me-2"></i>Add to Cart
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-lg-4 mb-4">
+                                            <div class="card product-card p-2">
+                                                <div class="card-img mb-2 position-relative">
+                                                    <img src="images/products/product-1.jpg" class="card-img-top"
+                                                        alt="product-image">
+                                                    <div href="javascript:void(0)" class="wish-list-icon">
+                                                        <i class="bi bi-suit-heart"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body p-0">
+                                                    <h5 class="card-title fs-6 text-center">Women Tops- blue color</h5>
+
+                                                    <p class="card-text price m-0 text-center">$123.00 <span
+                                                            class="sub-price"><del>$150</del></span> </p>
+                                                    <div class="rating mb-2 text-center">
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </div>
+                                                    <div
+                                                        class="card-btn d-flex justify-content-lg-evenly justify-content-between">
+                                                        <a href="javascript:void(0)" class="btn btn-primary">
+                                                            <i class="fa-solid fa-eye me-2"></i>View
+                                                        </a>
+                                                        <a href="javascript:void(0)" class="btn btn-primary">
+                                                            <i class="fa-solid fa-cart-shopping me-2"></i>Add to Cart
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-lg-4 mb-4">
+                                            <div class="card product-card p-2">
+                                                <div class="card-img mb-2 position-relative">
+                                                    <img src="images/products/product-1.jpg" class="card-img-top"
+                                                        alt="product-image">
+                                                    <div href="javascript:void(0)" class="wish-list-icon">
+                                                        <i class="bi bi-suit-heart"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body p-0">
+                                                    <h5 class="card-title fs-6 text-center">Women Tops- blue color</h5>
+
+                                                    <p class="card-text price m-0 text-center">$123.00 <span
+                                                            class="sub-price"><del>$150</del></span> </p>
+                                                    <div class="rating mb-2 text-center">
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </div>
+                                                    <div
+                                                        class="card-btn d-flex justify-content-lg-evenly justify-content-between">
+                                                        <a href="javascript:void(0)" class="btn btn-primary">
+                                                            <i class="fa-solid fa-eye me-2"></i>View
+                                                        </a>
+                                                        <a href="javascript:void(0)" class="btn btn-primary">
+                                                            <i class="fa-solid fa-cart-shopping me-2"></i>Add to Cart
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-lg-4 mb-4">
+                                            <div class="card product-card p-2">
+                                                <div class="card-img mb-2 position-relative">
+                                                    <img src="images/products/product-1.jpg" class="card-img-top"
+                                                        alt="product-image">
+                                                    <div href="javascript:void(0)" class="wish-list-icon">
+                                                        <i class="bi bi-suit-heart"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body p-0">
+                                                    <h5 class="card-title fs-6 text-center">Women Tops- blue color</h5>
+
+                                                    <p class="card-text price m-0 text-center">$123.00 <span
+                                                            class="sub-price"><del>$150</del></span> </p>
+                                                    <div class="rating mb-2 text-center">
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </div>
+                                                    <div
+                                                        class="card-btn d-flex justify-content-lg-evenly justify-content-between">
+                                                        <a href="javascript:void(0)" class="btn btn-primary">
+                                                            <i class="fa-solid fa-eye me-2"></i>View
+                                                        </a>
+                                                        <a href="javascript:void(0)" class="btn btn-primary">
+                                                            <i class="fa-solid fa-cart-shopping me-2"></i>Add to Cart
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-lg-4 mb-4">
+                                            <div class="card product-card p-2">
+                                                <div class="card-img mb-2 position-relative">
+                                                    <img src="images/products/product-1.jpg" class="card-img-top"
+                                                        alt="product-image">
+                                                    <div href="javascript:void(0)" class="wish-list-icon">
+                                                        <i class="bi bi-suit-heart"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body p-0">
+                                                    <h5 class="card-title fs-6 text-center">Women Tops- blue color</h5>
+
+                                                    <p class="card-text price m-0 text-center">$123.00 <span
+                                                            class="sub-price"><del>$150</del></span> </p>
+                                                    <div class="rating mb-2 text-center">
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </div>
+                                                    <div
+                                                        class="card-btn d-flex justify-content-lg-evenly justify-content-between">
+                                                        <a href="javascript:void(0)" class="btn btn-primary">
+                                                            <i class="fa-solid fa-eye me-2"></i>View
+                                                        </a>
+                                                        <a href="javascript:void(0)" class="btn btn-primary">
+                                                            <i class="fa-solid fa-cart-shopping me-2"></i>Add to Cart
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 col-lg-4 mb-4">
+                                            <div class="card product-card p-2">
+                                                <div class="card-img mb-2 position-relative">
+                                                    <img src="images/products/product-1.jpg" class="card-img-top"
+                                                        alt="product-image">
+                                                    <div href="javascript:void(0)" class="wish-list-icon">
+                                                        <i class="bi bi-suit-heart"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body p-0">
+                                                    <h5 class="card-title fs-6 text-center">Women Tops- blue color</h5>
+
+                                                    <p class="card-text price m-0 text-center">$123.00 <span
+                                                            class="sub-price"><del>$150</del></span> </p>
+                                                    <div class="rating mb-2 text-center">
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </div>
+                                                    <div
+                                                        class="card-btn d-flex justify-content-lg-evenly justify-content-between">
+                                                        <a href="javascript:void(0)" class="btn btn-primary">
+                                                            <i class="fa-solid fa-eye me-2"></i>View
+                                                        </a>
+                                                        <a href="javascript:void(0)" class="btn btn-primary">
+                                                            <i class="fa-solid fa-cart-shopping me-2"></i>Add to Cart
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-info tab-content--2">
+                                    <div class="row justify-content-center ">
+                                        <div class="col-10">
+                                            <div
+                                                class="list-card border rounded p-2 mb-3 d-flex align-items-center gap-3">
+                                                <div class="list-img">
+                                                    <img src="images/products/product-1-1.jpg" alt="product"
+                                                        class="img-fluid">
+                                                </div>
+                                                <div class="list-body">
+                                                    <h5 class="list-title">Women Tops- blue color</h5>
+                                                    <p class="list-info d-none d-md-block">synthetic cloth, smooth,
+                                                        shiny, washable, etc.
+                                                    </p>
+
+                                                    <p class="card-text price m-0 fs-md-5">₹123.00 <span
+                                                            class="sub-price fs-6"><del>₹150.00</del></span>
+                                                    </p>
+                                                    <p class="save mb-0 mb-md-2">You save ₹27</p>
+                                                    <div class="rating mb-2">
+                                                        <span>Rating:</span>&nbsp;
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </div>
+                                                    <div class="list-btn">
+                                                        <a href="javascript:void(0)" class="btn btn-primary">
+                                                            <i class="fa-solid fa-cart-shopping"></i>Add to Cart
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-10">
+                                            <div
+                                                class="list-card border rounded p-2 mb-3 d-flex align-items-center gap-3">
+                                                <div class="list-img">
+                                                    <img src="images/products/product-1-1.jpg" alt="product"
+                                                        class="img-fluid">
+                                                </div>
+                                                <div class="list-body">
+                                                    <h5 class="list-title">Women Tops- blue color</h5>
+                                                    <p class="list-info d-none d-md-block">synthetic cloth, smooth,
+                                                        shiny, washable, etc.
+                                                    </p>
+
+                                                    <p class="card-text price m-0 fs-md-5">₹123.00 <span
+                                                            class="sub-price fs-6"><del>₹150.00</del></span>
+                                                    </p>
+                                                    <p class="save mb-0 mb-md-2">You save ₹27</p>
+                                                    <div class="rating mb-2">
+                                                        <span>Rating:</span>&nbsp;
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </div>
+                                                    <div class="list-btn">
+                                                        <a href="javascript:void(0)" class="btn btn-primary">
+                                                            <i class="fa-solid fa-cart-shopping"></i>Add to Cart
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-10">
+                                            <div
+                                                class="list-card border rounded p-2 mb-3 d-flex align-items-center gap-3">
+                                                <div class="list-img">
+                                                    <img src="images/products/product-1-1.jpg" alt="product"
+                                                        class="img-fluid">
+                                                </div>
+                                                <div class="list-body">
+                                                    <h5 class="list-title">Women Tops- blue color</h5>
+                                                    <p class="list-info d-none d-md-block">synthetic cloth, smooth,
+                                                        shiny, washable, etc.
+                                                    </p>
+
+                                                    <p class="card-text price m-0 fs-md-5">₹123.00 <span
+                                                            class="sub-price fs-6"><del>₹150.00</del></span>
+                                                    </p>
+                                                    <p class="save mb-0 mb-md-2">You save ₹27</p>
+                                                    <div class="rating mb-2">
+                                                        <span>Rating:</span>&nbsp;
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </div>
+                                                    <div class="list-btn">
+                                                        <a href="javascript:void(0)" class="btn btn-primary">
+                                                            <i class="fa-solid fa-cart-shopping"></i>Add to Cart
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-10">
+                                            <div
+                                                class="list-card border rounded p-2 mb-3 d-flex align-items-center gap-3">
+                                                <div class="list-img">
+                                                    <img src="images/products/product-1-1.jpg" alt="product"
+                                                        class="img-fluid">
+                                                </div>
+                                                <div class="list-body">
+                                                    <h5 class="list-title">Women Tops- blue color</h5>
+                                                    <p class="list-info d-none d-md-block">synthetic cloth, smooth,
+                                                        shiny, washable, etc.
+                                                    </p>
+
+                                                    <p class="card-text price m-0 fs-md-5">₹123.00 <span
+                                                            class="sub-price fs-6"><del>₹150.00</del></span>
+                                                    </p>
+                                                    <p class="save mb-0 mb-md-2">You save ₹27</p>
+                                                    <div class="rating mb-2">
+                                                        <span>Rating:</span>&nbsp;
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </div>
+                                                    <div class="list-btn">
+                                                        <a href="javascript:void(0)" class="btn btn-primary">
+                                                            <i class="fa-solid fa-cart-shopping"></i>Add to Cart
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-10">
+                                            <div
+                                                class="list-card border rounded p-2 mb-3 d-flex align-items-center gap-3">
+                                                <div class="list-img">
+                                                    <img src="images/products/product-1-1.jpg" alt="product"
+                                                        class="img-fluid">
+                                                </div>
+                                                <div class="list-body">
+                                                    <h5 class="list-title">Women Tops- blue color</h5>
+                                                    <p class="list-info d-none d-md-block">synthetic cloth, smooth,
+                                                        shiny, washable, etc.
+                                                    </p>
+
+                                                    <p class="card-text price m-0 fs-md-5">₹123.00 <span
+                                                            class="sub-price fs-6"><del>₹150.00</del></span>
+                                                    </p>
+                                                    <p class="save mb-0 mb-md-2">You save ₹27</p>
+                                                    <div class="rating mb-2">
+                                                        <span>Rating:</span>&nbsp;
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </div>
+                                                    <div class="list-btn">
+                                                        <a href="javascript:void(0)" class="btn btn-primary">
+                                                            <i class="fa-solid fa-cart-shopping"></i>Add to Cart
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-10">
+                                            <div
+                                                class="list-card border rounded p-2 mb-3 d-flex align-items-center gap-3">
+                                                <div class="list-img">
+                                                    <img src="images/products/product-1-1.jpg" alt="product"
+                                                        class="img-fluid">
+                                                </div>
+                                                <div class="list-body">
+                                                    <h5 class="list-title">Women Tops- blue color</h5>
+                                                    <p class="list-info d-none d-md-block">synthetic cloth, smooth,
+                                                        shiny, washable, etc.
+                                                    </p>
+
+                                                    <p class="card-text price m-0 fs-md-5">₹123.00 <span
+                                                            class="sub-price fs-6"><del>₹150.00</del></span>
+                                                    </p>
+                                                    <p class="save mb-0 mb-md-2">You save ₹27</p>
+                                                    <div class="rating mb-2">
+                                                        <span>Rating:</span>&nbsp;
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star-fill me-1"></i>
+                                                        <i class="bi bi-star"></i>
+                                                    </div>
+                                                    <div class="list-btn">
+                                                        <a href="javascript:void(0)" class="btn btn-primary">
+                                                            <i class="fa-solid fa-cart-shopping"></i>Add to Cart
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="pages">
+                            <nav class="d-flex justify-content-center">
+                                <ul class="pagination">
+                                    <li class="page-item disabled">
+                                        <span class="page-link">Previous</span>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item active" aria-current="page">
+                                        <span class="page-link">2</span>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">Next</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="footer-part mb-4 mb-md-0">
+                        <a href="javascript:void(0)"
+                            class="text-white d-block mb-2 text-center fw-bold text-decoration-none fs-2">Cloth-HUNT</a>
+                        <div class="footer-info d-flex justify-content-center flex-column gap-2">
+
+                            <div class=" footer-contact d-flex gap-2 align-items-center">
+                                <div class="icon text-primary">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div class="footer-text">
+                                    <a href="tel:9879898798"
+                                        class="d-inline-block fs-6 text-decoration-none text-white">+91-9879898798,</a>
+                                    <a href="tel:9879898798"
+                                        class="d-inline-block fs-6 text-decoration-none text-white">+91-9879898798</a>
+                                </div>
+                            </div>
+                            <div class="footer-contact d-flex gap-2 align-items-center">
+                                <div class="icon text-primary">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="footer-text">
+                                    <a href="mailto:clothhunt.shop@gmail.com"
+                                        class="d-inline-block fs-6 text-decoration-none text-white">clothhunt.shop@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="footer-contact d-flex gap-2 align-items-center">
+                                <div class="icon text-primary">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div class="footer-text ">
+                                    <p class="text-white mb-0 ">A-52, Ground floor, Saurastra soc.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-6 col-md-2 mb-4 mb-md-0 text-white">
+                    <h4 class="text-uppercase fw-bold mb-3">categories</h4>
+                    <ul class="footer-menu list-unstyled d-flex flex-column gap-3">
+                        <li><a href="javascript:void(0)" class="footer-link">Men</a>
+                        </li>
+                        <li><a href="javascript:void(0)" class="footer-link">Women</a>
+                        </li>
+                        <li><a href="javascript:void(0)" class="footer-link">Kids</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2 mb-4 mb-md-0 text-white">
+                    <h4 class="text-uppercase fw-bold mb-3">quick links</h4>
+                    <ul class="footer-menu list-unstyled d-flex flex-column gap-3">
+                        <li><a href="javascript:void(0)" class="footer-link">Duties & Texes</a>
+                        </li>
+                        <li><a href="javascript:void(0)" class="footer-link">shipping info</a>
+                        </li>
+                        <li><a href="javascript:void(0)" class="footer-link">privacy policy</a>
+                        </li>
+                        <li><a href="javascript:void(0)" class="footer-link">tearms &
+                                conditions</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 text-white">
+                    <h4 class="text-uppercase fw-bold mb-3">news letter</h4>
+                    <p class="text-uppercase">new products and sales directly to your inbox</p>
+                    <form>
+                        <input type="text" name="footerEmail" id="footerEmail" class="d-block p-1">
+                        <button type="submit" class="btn btn-outline-light">Submit</button>
+                    </form>
+                </div>
+                <div class="hr mt-4 mb-3"></div>
+                <div class="copyright d-flex justify-content-between align-items-center mb-3">
+                    <p class="text-white">Cloth-HUNT &copy; Created by: Fresh-Team</p>
+                    <button type="button" class="btn btn-outline-light">Back to Top</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+@media (max-width: 575px) {
+    .hero-title .title-heading {
+        font-size: 2.1rem;
+    }
+    .hero-title .hero-text {
+        font-size: 0.875rem;
+    }
+    .hero-title .hero-btn {
+        font-size: 0.875rem;
+    }
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+    .hero .item {
+        min-height: 35rem;
+    }
+    .hero-title .title-heading {
+        font-size: 3.5rem;
+    }
+    .hero-title .hero-text {
+        font-size: 1.2rem;
+    }
+    .list-card .list-title {
+        font-size: 1.2rem;
+    }
+}
+@media (min-width: 992px) {
+    .hero .item {
+        background-position: center top;
+    }
+    .list-card .list-title {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .title-text::after {
+        right: 40%;
+        bottom: 0;
+        transform: translateX(0);
+    }
+    .title-text::before {
+        left: 40%;
+        bottom: 0;
+        transform: translateX(0);
+    }
+}
