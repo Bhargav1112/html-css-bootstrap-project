@@ -529,6 +529,9 @@ header .navbar-nav .nav-link {
 .cart .table tr {
     text-align: center;
 }
+.cart-list-wrapper {
+    overflow-x: scroll;
+}
 .cart .table tr td .cart-product {
     width: 50px;
     height: 50px;
@@ -542,4 +545,55 @@ header .navbar-nav .nav-link {
     gap: 0.5rem;
     align-items: center;
     justify-content: flex-start;
+}
+.cart-qty-btns {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid var(--text-color);
+    border-radius: 3px;
+}
+.cart-qty-btns button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    transition: all 0.5s;
+    width: 25px;
+}
+.cart-qty-btns button:hover {
+    background-color: var(--light-bg);
+}
+#pincode {
+    display: block;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    width: 100%;
+    padding: 0.5rem;
+    box-shadow: 0 0 0.2rem 1px rgba(0, 0, 0, 0.15);
+    margin-bottom: 0.5rem;
+}
+.availability,
+.order-price {
+    border: 1px solid var(--bs-secondary);
+    border-radius: 6px;
+    padding: 1rem;
+}
+.availability button {
+    display: block;
+    width: 100%;
+}
+#pincode:focus {
+    outline: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+.order-price div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--text-color);
 }

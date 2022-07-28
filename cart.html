@@ -122,53 +122,101 @@
         <section class="cart">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-lg-8">
-                        <table class="table ">
-                            <thead>
-                                <tr class="table-primary">
-                                    <th style="width: 50px;">Sr.No.</th>
-                                    <th style="max-width: 300px;">Detail</th>
-                                    <th style="width: 75px;">Price</th>
-                                    <th style="width: 120px;">Qty</th>
-                                    <th style="width: 100px;">Sub Total</th>
-                                    <th style="width: 75px;">Remove</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td class="detail">
-                                        <div class="cart-product">
-                                            <img src="images/products/product-1-1.jpg" alt="woman" class="img-fluid">
-                                        </div>
-                                        <h6>Women's top red</h6>
-                                    </td>
-                                    <td class="product-price">₹123</td>
-                                    <td class="product-qty">2</td>
-                                    <td class="product-subtotal">₹246</td>
-                                    <td class="product-remove"><i class="fa-solid fa-xmark"></i></td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td class="detail">
-                                        <div class="cart-product">
-                                            <img src="images/products/product-2-1.jpg" alt="woman" class="img-fluid">
-                                        </div>
-                                        <h6>Women's top red</h6>
-                                    </td>
-                                    <td class="product-price">₹123</td>
-                                    <td class="product-qty">
-                                        <button class="btn btn-primary">+</button>
-                                        <span class="qty">2</span>
-                                        <button class="btn btn-primary">-</button>
-                                    </td>
-                                    <td class="product-subtotal">₹246</td>
-                                    <td class="product-remove"><i class="fa-solid fa-xmark"></i></td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div class="col-12 col-lg-8 mb-3 mb-lg-0">
+                        <div class="cart-list-wrapper border border-secondary rounded">
+                            <table class="table ">
+                                <thead>
+                                    <tr class="table-primary">
+                                        <th style="max-width: 50px;">Sr.No.</th>
+                                        <th style="max-width: 300px;">Detail</th>
+                                        <th style="max-width: 75px;">Price</th>
+                                        <th style="max-width: 120px;">Qty</th>
+                                        <th style="max-width: 100px;">Sub Total</th>
+                                        <th style="max-width: 75px;">Remove</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td class="detail">
+                                            <div class="cart-product">
+                                                <img src="images/products/product-1-1.jpg" alt="woman"
+                                                    class="img-fluid">
+                                            </div>
+                                            <h6>Women's top red</h6>
+                                        </td>
+                                        <td class="product-price">₹123</td>
+                                        <td class="product-qty">
+                                            <div class="cart-qty-btns">
+                                                <button class="qty-btn">+</button>
+                                                <span class="qty">2</span>
+                                                <button class="qty-btn">-</button>
+                                            </div>
+                                        </td>
+                                        <td class="product-subtotal">₹246</td>
+                                        <td class="product-remove">
+                                            <button type="button" class="btn btn-primary rounded-circle">
+                                                <i class="fa-solid fa-xmark"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td class="detail">
+                                            <div class="cart-product">
+                                                <img src="images/products/product-2-1.jpg" alt="woman"
+                                                    class="img-fluid">
+                                            </div>
+                                            <h6>Women's top red</h6>
+                                        </td>
+                                        <td class="product-price">₹123</td>
+                                        <td class="product-qty">
+                                            <div class="cart-qty-btns">
+                                                <button class="qty-btn">+</button>
+                                                <span class="qty">2</span>
+                                                <button class="qty-btn">-</button>
+                                            </div>
+                                        </td>
+                                        <td class="product-subtotal">₹246</td>
+                                        <td class="product-remove">
+                                            <button type="button" class="btn btn-primary rounded-circle">
+                                                <i class="fa-solid fa-xmark"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-                    <div class="col-12 col-lg-4"></div>
+                    <div class="col-12 col-lg-4">
+                        <div class="availability mb-3">
+                            <form>
+                                <label for="pincode" class=" d-block mb-2">Enter pincode</label>
+                                <input type="text" name="pincode" id="pincode">
+                                <button type="submit" class="btn btn-primary">Check Availability</button>
+                            </form>
+                        </div>
+                        <div class="order-price">
+                            <div class="sub-total">
+                                <span>Sub Total</span>
+                                <span class="text-primary fw-semibold">₹246</span>
+                            </div>
+                            <div class="tax">
+                                <span>Tax</span>
+                                <span class="text-primary fw-semibold">₹10</span>
+                            </div>
+                            <div class="shipping">
+                                <span>Shipping</span>
+                                <span class="text-primary fw-semibold opacity-75"><em>free shipping</em></span>
+                            </div>
+                            <div class="grand-total mb-2">
+                                <span class="fw-bold">GRAND TOTAL</span>
+                                <span class="text-primary fw-bold">₹256</span>
+                            </div>
+                            <p>Shipping & Taxes calculated in checkout</p>
+                            <button type="button" class="btn btn-primary w-100">Proceed to Checkout</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
