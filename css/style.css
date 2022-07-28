@@ -523,3 +523,23 @@ header .navbar-nav .nav-link {
 .list-card .list-btn a {
     font-size: 0.875rem;
 }
+/* -------------------------- */
+/* CART PAGE */
+/* -------------------------- */
+.cart .table tr {
+    text-align: center;
+}
+.cart .table tr td .cart-product {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+.cart .table tr td {
+    vertical-align: middle;
+}
+.cart .detail {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: flex-start;
+}

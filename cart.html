@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cloth-HUNT | Cart</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- responsive -->
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md flex-column position-relative">
+            <div class="container justify-content-between pb-2">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand fw-bold fs-2" href='index.html'><img src="images/logo.png" alt="logo"
+                        class="img-fluid"></a>
+
+                <form class="d-md-flex d-none" role="search">
+                    <input class="form-control rounded-0 rounded-start search" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <button class="btn btn-outline-primary rounded-0 rounded-end" type="submit">Search</button>
+                </form>
+                <div class="header-buttons">
+                    <button class="btn btn-primary d-md-none">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <button class="btn btn-primary"><i class="fa-solid fa-user me-lg-2"></i><span
+                            class="d-none d-lg-inline-block">Login</span></button>
+                    <a href="cart.html" class="btn btn-primary position-relative">
+                        <i class="fa-solid fa-cart-shopping me-2"></i><span class="d-none d-lg-inline-block">Cart</span>
+                        <span class="badge">0</span>
+                    </a>
+                    <button class="btn btn-primary d-none d-lg-inline-block position-relative">
+                        <i class="fa-solid fa-heart me-2"></i><span class="d-none d-lg-inline-block">Whishlist</span>
+                        <span class="badge">0</span>
+                    </button>
+                </div>
+            </div>
+            <div class="hr d-none d-md-block"></div>
+            <div class="nav-menu container align-self-start">
+                <div class="collapse navbar-collapse pt-2" id="navbarSupportedContent">
+                    <ul class="navbar-nav gap-md-4 mb-lg-0 ">
+                        <li class="nav-item ">
+                            <a class="nav-link fw-bold text-uppercase active" aria-current="page"
+                                href='javascript:void(0)'>Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-uppercase" href='javascript:void(0)'>About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link fw-bold text-uppercase dropdown-toggle" href='shop.html' role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Shop
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href='shop.html'>Shop page</a></li>
+                                <li><a class="dropdown-item" href='javascript:void(0)'>Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href='javascript:void(0)'>Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link fw-bold text-uppercase dropdown-toggle" href='javascript:void(0)'
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href='javascript:void(0)'>Action</a></li>
+                                <li><a class="dropdown-item" href='javascript:void(0)'>Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href='javascript:void(0)'>Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold text-uppercase" href='javascript:void(0)'>
+                                Contact us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- navigation -->
+        <section class="navigation">
+            <div class="container">
+                <nav aria-label="breadcrumb" class="d-flex flex-column align-items-center">
+                    <h2 class="text-white">Cart</h2>
+                    <ol class=" breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Cart</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+        <!-- cart -->
+        <section class="cart">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-8">
+                        <table class="table ">
+                            <thead>
+                                <tr class="table-primary">
+                                    <th style="width: 50px;">Sr.No.</th>
+                                    <th style="max-width: 300px;">Detail</th>
+                                    <th style="width: 75px;">Price</th>
+                                    <th style="width: 120px;">Qty</th>
+                                    <th style="width: 100px;">Sub Total</th>
+                                    <th style="width: 75px;">Remove</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td class="detail">
+                                        <div class="cart-product">
+                                            <img src="images/products/product-1-1.jpg" alt="woman" class="img-fluid">
+                                        </div>
+                                        <h6>Women's top red</h6>
+                                    </td>
+                                    <td class="product-price">₹123</td>
+                                    <td class="product-qty">2</td>
+                                    <td class="product-subtotal">₹246</td>
+                                    <td class="product-remove"><i class="fa-solid fa-xmark"></i></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td class="detail">
+                                        <div class="cart-product">
+                                            <img src="images/products/product-2-1.jpg" alt="woman" class="img-fluid">
+                                        </div>
+                                        <h6>Women's top red</h6>
+                                    </td>
+                                    <td class="product-price">₹123</td>
+                                    <td class="product-qty">
+                                        <button class="btn btn-primary">+</button>
+                                        <span class="qty">2</span>
+                                        <button class="btn btn-primary">-</button>
+                                    </td>
+                                    <td class="product-subtotal">₹246</td>
+                                    <td class="product-remove"><i class="fa-solid fa-xmark"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-12 col-lg-4"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="footer-part mb-4 mb-md-0">
+                        <a href="javascript:void(0)"
+                            class="text-white d-block mb-2 text-center fw-bold text-decoration-none fs-2">Cloth-HUNT</a>
+                        <div class="footer-info d-flex justify-content-center flex-column gap-2">
+
+                            <div class=" footer-contact d-flex gap-2 align-items-center">
+                                <div class="icon text-primary">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div class="footer-text">
+                                    <a href="tel:9879898798"
+                                        class="d-inline-block fs-6 text-decoration-none text-white">+91-9879898798,</a>
+                                    <a href="tel:9879898798"
+                                        class="d-inline-block fs-6 text-decoration-none text-white">+91-9879898798</a>
+                                </div>
+                            </div>
+                            <div class="footer-contact d-flex gap-2 align-items-center">
+                                <div class="icon text-primary">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="footer-text">
+                                    <a href="mailto:clothhunt.shop@gmail.com"
+                                        class="d-inline-block fs-6 text-decoration-none text-white">clothhunt.shop@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="footer-contact d-flex gap-2 align-items-center">
+                                <div class="icon text-primary">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div class="footer-text ">
+                                    <p class="text-white mb-0 ">A-52, Ground floor, Saurastra soc.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-6 col-md-2 mb-4 mb-md-0 text-white">
+                    <h4 class="text-uppercase fw-bold mb-3">categories</h4>
+                    <ul class="footer-menu list-unstyled d-flex flex-column gap-3">
+                        <li><a href="javascript:void(0)" class="footer-link">Men</a>
+                        </li>
+                        <li><a href="javascript:void(0)" class="footer-link">Women</a>
+                        </li>
+                        <li><a href="javascript:void(0)" class="footer-link">Kids</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2 mb-4 mb-md-0 text-white">
+                    <h4 class="text-uppercase fw-bold mb-3">quick links</h4>
+                    <ul class="footer-menu list-unstyled d-flex flex-column gap-3">
+                        <li><a href="javascript:void(0)" class="footer-link">Duties & Texes</a>
+                        </li>
+                        <li><a href="javascript:void(0)" class="footer-link">shipping info</a>
+                        </li>
+                        <li><a href="javascript:void(0)" class="footer-link">privacy policy</a>
+                        </li>
+                        <li><a href="javascript:void(0)" class="footer-link">tearms &
+                                conditions</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 text-white">
+                    <h4 class="text-uppercase fw-bold mb-3">news letter</h4>
+                    <p class="text-uppercase">new products and sales directly to your inbox</p>
+                    <form>
+                        <input type="text" name="footerEmail" id="footerEmail" class="d-block p-1">
+                        <button type="submit" class="btn btn-outline-light">Submit</button>
+                    </form>
+                </div>
+                <div class="hr mt-4 mb-3"></div>
+                <div class="copyright d-flex justify-content-between align-items-center mb-3">
+                    <p class="text-white">Cloth-HUNT &copy; Created by: Fresh-Team</p>
+                    <button type="button" class="btn btn-outline-light">Back to Top</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
