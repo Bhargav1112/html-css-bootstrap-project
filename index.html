@@ -42,12 +42,16 @@
                         aria-label="Search">
                     <button class="btn btn-outline-primary rounded-0 rounded-end" type="submit">Search</button>
                 </form>
-                <div class="header-buttons">
+                <div class="header-buttons position-relative">
                     <button class="btn btn-primary d-md-none">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
-                    <button class="btn btn-primary"><i class="fa-solid fa-user me-lg-2"></i><span
-                            class="d-none d-lg-inline-block">Login</span></button>
+                    <a href="javascript:void(0)" class="btn btn-primary" id="account">
+                        <i class="fa-solid fa-user me-lg-2"></i>
+                        <span class="d-none d-lg-inline-block">Account
+                            <i class="fa-solid fa-angle-down ms-1"></i>
+                        </span>
+                    </a>
                     <a href="cart.html" class="btn btn-primary position-relative">
                         <i class="fa-solid fa-cart-shopping me-2"></i><span class="d-none d-lg-inline-block">Cart</span>
                         <span class="badge">0</span>
@@ -56,6 +60,15 @@
                         <i class="fa-solid fa-heart me-2"></i><span class="d-none d-lg-inline-block">Whishlist</span>
                         <span class="badge">0</span>
                     </button>
+
+                    <!-- account drop -->
+                    <div class="account-menu shadow">
+                        <ul class="mb-0 list-unstyled">
+                            <li><a href="javascript:void(0)">Login</a></li>
+                            <li><a href="javascript:void(0)">Signup</a></li>
+                            <li><a href="javascript:void(0)">My Whishlist</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="hr d-none d-md-block"></div>
@@ -800,6 +813,7 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/owl.carousel.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="js/script.js"></script>
     <script>
         $(document).ready(function () {
             var owl2 = $('.hero-slider');

@@ -1,6 +1,7 @@
 const tabHeadings = document.querySelectorAll(".tab");
 const tabContent = document.querySelector(".tab-content");
 const tabContents = document.querySelectorAll(".tab-info");
+const accBtn = document.getElementById("account");
 
 const clickHandler = (e) => {
     const element = e.target.closest(".tab");
@@ -18,4 +19,16 @@ const clickHandler = (e) => {
 };
 tabHeadings.forEach((title) => {
     title.addEventListener("click", clickHandler);
+});
+
+accBtn.addEventListener("click", (e) => {
+    accBtn.classList.toggle("active");
+});
+
+document.addEventListener("click", (e) => {
+    if (e.target.closest("#account") !== accBtn) {
+        if (accBtn.classList.contains("active")) {
+            accBtn.classList.remove("active");
+        }
+    }
 });

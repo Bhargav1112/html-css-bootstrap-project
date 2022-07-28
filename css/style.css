@@ -105,11 +105,9 @@ body {
 section {
     padding: 5rem 0;
 }
-
-/* .navbar {
-    background-color: var(--header-bg);
-} */
-
+/* --------------------------- */
+/* navbar */
+/* --------------------------- */
 .navbar .nav-item .nav-link {
     color: var(--bs-primary);
 }
@@ -127,6 +125,28 @@ header .navbar-nav .nav-link {
 .header-buttons button:hover .badge {
     background-color: #fff;
     color: var(--bs-primary);
+}
+.account-menu {
+    position: absolute;
+    top: 100%;
+    max-width: 400px;
+    width: 200px;
+    padding: 1rem;
+    border-radius: 6px;
+    z-index: 999;
+    background-color: #fff;
+    transform: translateY(20px);
+    transition: all 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+#account.active ~ .account-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(10px);
+}
+.account-menu ul li {
+    border-bottom: 1px solid var(--text-color);
 }
 .hr {
     display: inline-block;
