@@ -115,8 +115,26 @@ section {
     color: var(--bs-primary);
 }
 .header-buttons button,
-header .navbar-nav .nav-link {
+header .navbar-nav .nav-item .nav-link {
     font-size: 0.875rem;
+    position: relative;
+    z-index: 1;
+}
+header .navbar-nav .nav-item .nav-link:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    z-index: -1;
+    background-color: var(--light-bg);
+    transition: all 0.5s;
+    border-bottom: 2px solid var(--bs-primary);
+}
+header .navbar-nav .nav-item .nav-link:hover::after,
+header .navbar-nav .nav-item .nav-link.active::after {
+    width: 100%;
 }
 .header-buttons button .badge {
     background-color: var(--bs-primary);
@@ -158,6 +176,10 @@ header .navbar-nav .nav-link {
 }
 .navbar-brand img {
     max-width: 150px;
+}
+.navbar-nav .dropdown:hover .nav-link,
+.navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
 }
 /* -------------------------------- */
 /* SECTION TITLE */
